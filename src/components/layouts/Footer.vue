@@ -1,0 +1,21 @@
+<template>
+    <p id="footer">
+        @2023 All copyright reserved.
+    </p>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style scoped>
+    #footer {
+        margin: 0;
+        padding: 8px 11px;
+        text-align: center;
+        color: antiquewhite;
+        background-color: #595959;
+    }
+</style>
