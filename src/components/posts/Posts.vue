@@ -44,4 +44,15 @@ export default {
        position: relative;
        cursor: pointer;
     }
+    @media screen and (max-width: 992px) {
+        .posts {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .posts {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
