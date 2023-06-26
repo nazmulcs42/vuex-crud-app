@@ -30,22 +30,13 @@ export default {
             post
         }
     },
-    // data(){
-    //     return {
-    //         name: "Add New Post",
-    //         post: {
-    //             title: "",
-    //             body: ""
-    //         }
-    //     }
-    // },
     methods: {
-        handlePostFormData: (event) => {
-            event.preventDefault();
-            const form = event.target;
-            console.log("form", form.title)
-            console.log("post", this.post)
-            event.reset();
+        ...mapActions(["addNewPost"]), 
+        handlePostFormData (e) {
+            e.preventDefault();
+            this.addNewPost(this.post);
+            this.post = { title: "", body: ""};
+            e.target.reset();
         }
     }
 }

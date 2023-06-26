@@ -5,6 +5,8 @@
             <div v-for="post in statePosts" :key="post.id" class="post">
                 <h5>{{ post.title }}</h5>
                 <p>{{ post.body }}</p>
+                <!-- <i @click="deletePost(post.id)" class="fa fa-trash pull-right"></i> -->
+                <i @click="handleDeletePost($event, post.id)" class="fa fa-trash pull-right"></i>
             </div>
         </div>
     </div>
@@ -21,7 +23,13 @@ export default {
     },
     computed: mapGetters(['statePosts']),
     methods: {
-        ...mapActions(["fetchPosts"])
+        ...mapActions(["fetchPosts", "deletePost"]),
+        handleDeletePost(event, postId){
+            event.preventDefault();
+            if(confirm("Are you sure?")){
+                this.deletePost(postId);
+            }
+        }
     },
     created () {
         this.fetchPosts();
@@ -43,6 +51,14 @@ export default {
        text-align: justify;
        position: relative;
        cursor: pointer;
+    }
+
+    i {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: #fff;
+        cursor: pointer;
     }
     @media screen and (max-width: 992px) {
         .posts {
