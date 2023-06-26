@@ -13,19 +13,26 @@
         </div>
         <div id="content-body"> 
             <h3>Welcome to vuex practice session</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequuntur eius consequatur est voluptates. Animi vel adipisci repellat voluptatem natus, dolores quo harum vitae, dolore quidem, neque voluptatum velit. Asperiores.</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequuntur eius consequatur est voluptates. Animi vel adipisci repellat voluptatem natus, dolores quo harum vitae, dolore quidem, neque voluptatum velit. Asperiores.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellat suscipit doloremque iure corporis. Nobis debitis inventore repudiandae, laborum voluptatem exercitationem error non adipisci assumenda voluptatibus, consequatur quisquam repellat ea!</p>
-        
-             <Todos></Todos>
+            -->
+
+            <!-- <Todos></Todos> -->
+
+            <!-- https://jsonplaceholder.typicode.com/posts -->
+            <Posts></Posts>
+
         </div>
     </div>
 </template>
 
 <script>
 import Todos from './../todos/Todos.vue'
+import Posts from './../posts/Posts.vue'
     export default {
         components: {
-            Todos
+            Todos,
+            Posts
         }
     }
 </script>
