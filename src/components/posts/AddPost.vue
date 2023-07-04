@@ -13,7 +13,8 @@
                 <!-- <input type="text" name="body" v-model="post.body" class="post-description" > -->
             </div>
             <div class="mt-3">
-                <input type="submit" class="btn" value="Save">
+                <!-- <input type="submit" class="btn" value="Save"> -->
+                <button type="submit" class="btn">Save</button>
             </div>
         </form>
     </div>
@@ -51,7 +52,7 @@ export default {
         outline: 0;
         box-sizing: border-box;
     }
-    .btn {
+    /* .btn {
         color: #F9F9F9;
         background-color: #41b883;
         padding: 8px 11px;
@@ -60,6 +61,18 @@ export default {
         cursor: pointer;
 
 
+    } */
+    .btn {
+        background: linear-gradient(-240deg, #595959 0%, #33b178aa 100%);
+        border-radius: 6px;
+        color: #000;
+        padding: 12px 28px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .btn:hover {
+        background: linear-gradient(-240deg, #595959, #595959, #33b178aa);
+        box-shadow: 3px 3px 1px #595959;
     }
     .mt-3 {
         margin-top: 16px;

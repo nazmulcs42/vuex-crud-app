@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>{{ name }}</h3>
-        <FilterLimitComponent></FilterLimitComponent>
+        <!-- <FilterLimitComponent></FilterLimitComponent> -->
         <div class="posts">
             <div v-for="post in statePosts" :key="post.id" class="post">
                 <h5>{{ post.title }}</h5>

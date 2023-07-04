@@ -86,11 +86,15 @@ import AddPost from './../posts/AddPost.vue'
         list-style: none;
         color:#f9f9f9;
         /* background: #41b883; */
-        background: linear-gradient(-240deg, #595959,#33b178aa, #6c6ce7b8);
+        background: linear-gradient(-240deg, #595959,#33b178aa); /* , #6c6ce7b8); */
+        /* background: linear-gradient(-240deg, #0e0d0d,  #595959,#d0d453e8, #4c4cc5cd); */
         font-weight: 600;
         padding: 8px 11px;
         margin-top:  5px;
         border-radius: 3px;
+    }
+    #content-menu .menu-items .menu-link .menu-item:hover {
+        background: linear-gradient(-240deg,  #595959, #595959,#33b178aa);
     }
     #content-menu .menu-items .menu-link {
         text-decoration: none;
