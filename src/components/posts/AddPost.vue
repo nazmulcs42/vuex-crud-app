@@ -63,7 +63,7 @@ export default {
 
     } */
     .btn {
-        background: linear-gradient(-240deg, #595959 0%, #33b178aa 100%);
+        background: linear-gradient(-240deg, #595959 0%, #42b883aa 100%);
         border-radius: 6px;
         color: #000;
         padding: 12px 28px;
@@ -71,8 +71,9 @@ export default {
         font-weight: bold;
     }
     .btn:hover {
-        background: linear-gradient(-240deg, #595959, #595959, #33b178aa);
-        box-shadow: 3px 3px 1px #595959;
+        /* background: linear-gradient(-240deg, #595959, #595959, #33b178aa);
+        box-shadow: 3px 3px 1px #595959; */
+        filter: drop-shadow(0 0 1rem #42b883aa);
     }
     .mt-3 {
         margin-top: 16px;
